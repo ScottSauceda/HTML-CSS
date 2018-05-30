@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+
+/* Tag-based CSS */
+
+body {
+    font-family: sans-serif;
+    background-color: #EEF;
+    color: rgb(112, 109, 166);
+    /* text-align: center; */
+    background-image: url('../../images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+/*
+div {
+    background-color: #ABC;
+    color: #123;
+    padding: 12px;
+    margin: 12px;
+    min-height: 100px;
+    width: 500px;
+}
+*/
+table {
+    background-color: lavender;
+    width: 70%;
+}
+
+th {
+    background-color: yellow;
+}
+
+input, select {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: monospace;
+    color: beige;
+    background-color: #622;
+    padding: 5px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+    text-indent: 30px;
+    font-size: 18px;
+    line-height: 28px; /* font plus gap */
+    text-align: justify;
+    margin: 0px 20px;
+    /* margin-left: 20px;
+    margin-right: 20px;
+    min-width: 350px;
+    max-width: 600px; */
+}
+/*
+ul {
+   list-style-image: url(../images/icons/apple-bullet.png); 
+    line-height: 32px;
+}
+*/
+a {
+    color: #338;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Class-based CSS */
+.aLaCarte {
+    color: #ABC123;
+    font-weight: bold;
+    font-family: monospace;
+    background-color: darkmagenta;
+    padding: 10px;
+}
+
+.hideElement {
+    display: none;
+}
+
+/* Class-based CSS for Box Model Layout */
+.container {
+    background-color: #EEB;
+    width: 80%;
+    min-width: 400px;
+    /*
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    /* margin: 10px 20% 20px 10%; T-R-B-L (Trouble) */
+    margin: 0 auto; /* shorthand for TB LR */
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    /* background-color: #123; */
+    color: yellow;
+    height: 100px;
+
+}
+
+.sidebar {
+    /* background: papayawhip; */
+    width: 31%;
+    min-height: 200px;
+    float: left;
+    padding: 2%;
+}
+
+.main {
+    /* background-color: #ABC; */
+    width: 61%;
+    min-height: 200px;
+    float: right;
+    padding: 2%;
+}
+
+.footer {
+    background-color: #644;
+    min-height: 50px;
+    clear: both;
+}
+
+.nav {
+    background-color: coral;
+    height: 50px;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 5px 0px 5px 0px /* T-R-B-L (Trouble!) */
+}
+
+/* ID-based CSS for Box Model Layout */
+#container {
+    background-color: #EEB;
+    width: 80%;
+    min-width: 400px;
+    /*
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    /* margin: 10px 20% 20px 10%; T-R-B-L (Trouble) */
+    margin: 0 auto; /* shorthand for TB LR */
+    text-align: center;
+    padding: 20px;
+}
+
+#header {
+    background-color: #123;
+    color: yellow;
+    height: 100px;
+}
+
+#sidebar {
+    background: papayawhip;
+    width: 31%;
+    min-height: 200px;
+    float: left;
+    padding: 2%;
+}
+
+#main {
+    background-color: #ABC;
+    width: 61%;
+    min-height: 200px;
+    float: right;
+    padding: 2%;
+}
+
+#footer {
+    background-color: #ECC;
+    min-height: 50px;
+    clear: both;
+}
+
+#nav {
+    background-color: coral;
+    height: 50px;
+}
+
+/* Compound CSS for Box Model Layout */
+#nav li {
+    display: inline-block;
+    margin: 10px 20px; /* T-R-B-L (Trouble!) */
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+#nav li a:hover { /* hover = mouseover */
+    background-color: greenyellow;
+}
+
+#footer li {
+    display: inline-block;
+    margin: 10px 20px; /* T-R-B-L (Trouble!) */
+    font-size: 12px;
+}
+
+#footer li a:active { /* active = mousedown */
+    background-color: forestgreen;
+    color: white;
+}
+
+#sidebar p {
+    font-family: serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    text-indent: 0px; /* 1st line */
+}
+
+/* HTML5 Tags for Box Model Layout */
+#container {
+    background-color: dodgerblue;
+    color: #334;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background-color: #336;
+    height: 100px;
+}
+
+nav {
+    background-color: darkblue;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+/* links are inside li in a ul list
+    make links run horizontally */
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem; /* about 24px */
+    padding: 10px 30px;
+    margin: 0px;
+    background-color: paleturquoise;
+}
+
+nav a:hover {
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+}
+
+nav a li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+aside {
+    background-color: bisque;
+    width: 31%;
+    float: left;
+    padding: 2%;
+    min-height: 300px;
+    background-image: url('../../images/sky.jpg');
+}
+
+main {
+    background-color: azure;
+    width: 61%;
+    float: right;
+    padding: 2%;
+    min-height: 300px;
+    background-image: url('../../images/sky.jpg');
+}
+
+footer {
+    background-color: mistyrose;
+    clear: both; /* do not float (bob up) */
+    height: 50px;
+    background-image: url('../../images/sky.jpg');
+    background-size: 100% auto;
+}
+
+footer a {
+/* links are inside li in a ul list
+    make links run horizontally */
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.2rem; /* about 24px */
+    padding: 5px 20px;
+    margin: 10px 0px;
+}
+
+footer a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+footer a li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

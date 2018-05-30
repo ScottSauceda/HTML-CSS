@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+.container {
+    background-color: rgb(130,200,255);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center ;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(100,200,150) ;
+    color: darkslateblue;
+    height: 60px;
+}
+
+nav {
+    background: aqua;
+    font-weight: bold;
+}
+
+main {
+    background: coral;
+    width: 64%;
+    min-height: 300px;
+    float: left;
+}
+
+main input {
+    margin: 0 auto;
+}
+
+main article p {
+    font-size: 15px;
+}
+
+.profile-table {
+    background: aqua;
+    margin: 35px auto;
+}
+
+#form1 {
+    text-align: left;
+    float: left;
+}
+
+main ul li{
+    list-style-type: ;
+    font-size: 2em;
+}
+
+.about {
+    background: coral;
+    width: 34%;
+    min-height: 300px;
+    float: left;
+    padding-left:;
+}
+
+.sidebar1 {
+    background: lightcoral;
+    width: 33%;
+    min-height: 300px;
+    float: left;
+}
+
+.sidebar2 {
+    background: cornflowerblue;
+    width: 33%;
+    min-height: 300px;
+    float: left;
+} 
+
+aside {
+    background: cornflowerblue;
+    width: 35%;
+    min-height: 300px;
+    float: right;
+}
+
+.adress {
+    background: red;
+    margin: 35px auto;
+}
+
+footer {
+    clear: both;
+    background: rgb(100,200,150);
+    color: darkslateblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#overlay {
+    width: ;
+    height: ;
+    position: ;
+    background: ;
+    color: ;
+    top: ;
+    left: ;
+    z-index: ;
+    display: ;
+}

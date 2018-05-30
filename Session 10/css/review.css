@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Mobile First Responsive Design */
+
+body {
+    margin: 0;
+    padding: 1em;
+}
+
+#container {
+    width: 100%;
+}
+
+#logo {
+    background: red;
+    color: aqua;
+    position: fixed;
+    padding: 1em;
+    font-size: 2em;
+    border-radius: 50%;
+    bottom: 1em;
+    left: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: cornflowerblue;
+    padding: 1em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+h1 {
+    font-size: 5vw;
+}
+
+
+    /* MEDIA QUERIES BEGINS */
+
+/* Over 800px */
+@media only screen and (min-width:800px) {
+    
+    P, img {
+        max-width: 45%;
+        padding: 0 1em;
+    }
+    
+    .text {
+        float: left;
+    }
+    
+    #logo {
+        top: 1em;
+        bottom: auto;
+    }
+    
+    header {
+        position: static;
+        
+    }
+    
+}
+
+    /* MEDIA QUERY BEGINS */
+@media only screen and (min-width:1200px) {
+    
+    img {
+        max-width: 30vw;
+    }
+    
+    #logo {
+        display: none;
+    }
+}
+
+    /* MEDIA QUERY BEGINS */
+@media only screen and (min-width:1300px) {
+    
+    img {
+        max-width: 22%;
+    }
+}

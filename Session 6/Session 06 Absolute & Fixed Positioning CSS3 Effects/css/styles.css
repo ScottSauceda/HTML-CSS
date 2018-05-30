@@ -1,0 +1,170 @@
+@charset "utf-8"; 
+
+:root {
+    --primary-color: azure;
+    --secondary-color: white;
+    --primary-font: cursive;
+}
+
+body {
+    background-color: var(--primary-color, red);
+    color: var(--secondary-color, red);
+    font-family: var(--primary-font, monospace);
+}
+
+/* Class-based CSS */
+.aLaCarte {
+    color: #abc123;
+    font-style: bold;
+}
+
+.hideElement {
+    display: none;
+}
+
+.container {
+    background-color: #abc;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.header {
+    background-color: #123;
+    color: yellow;
+    height: 100px;
+}
+
+.nav {
+    background-color: #ace;
+    font-weight: bold;
+}
+
+.main {
+    background-color: #fbb;
+    width: 65%;
+    min-height: 300px;
+    float: right;
+}
+
+.sidebar {
+   background-color: #bbf;
+   width: 35%;
+    min-height: 300px;
+    float: left
+}
+
+.footer {
+    background-color: #159;
+    width: 100%;
+    min-height: 100px;
+    clear: both;
+}
+
+/* ### ID-based CSS for Box Model Layout ### */
+
+#container {
+    background-color: #abc;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#header {
+    background-color: #123;
+    color: yellow;
+    height: 100px;
+}
+
+#nav {
+    background-color: #ace;
+    font-weight: bold;
+}
+
+#main {
+    background-color: #fbb;
+    width: 65%;
+    min-height: 300px;
+    float: right;
+}
+
+#sidebar {
+   background-color: #bbf;
+   width: 35%;
+    min-height: 300px;
+    float: left
+}
+
+#footer {
+    background-color: #159;
+    width: 100%;
+    min-height: 100px;
+    clear: both;
+}
+
+/* Compound CSS: Rules with more than one selector */
+
+h1, h2, h3 {
+    font-family: cursive;
+    color: antiquewhite;
+}
+
+#aside p {
+    font-family: serif;
+    line-height: 21px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#main p {
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+/* HTML5 Styles */
+
+#container {
+    background-color: #abc;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #123;
+    color: yellow;
+    height: 100px;
+}
+
+nav {
+    background-color: #ace;
+    font-weight: bold;
+}
+
+main {
+    background-color: #fbb;
+    width: 65%;
+    min-height: 300px;
+    float: right;
+}
+
+aside {
+   background-color: #bbf;
+   width: 35%;
+    min-height: 300px;
+    float: left
+}
+
+footer {
+    background-color: #159;
+    width: 100%;
+    min-height: 100px;
+    clear: both;
+}

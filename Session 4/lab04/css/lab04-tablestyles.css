@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#employees { /* ERROR */   /*Employees table id*/
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+#employees td, #employees th { /*tds and ths for employees table id*/
+    border: 1px solid #ddd;
+    padding: 8px; /* ERROR */
+}
+
+#employees tr:nth-child(even){background-color: #f2f2f2;} /*Changes the color of even rows*/
+
+#employees tr:hover {background-color: #ddd;} /*Changes the color of rows when you hover over them*/
+
+#employees th { /*ths for employees table id*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000080;
+    color: white;
+}
+
+.numtd {
+    text-align:right; /* ERROR */
+}
+    

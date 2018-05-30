@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+table {
+    background-color: lightgray;
+    border-radius:5px;
+    font-family:sans-serif;
+}
+
+table tr:nth-child(even) { /*Selector targets trs that belong to a table,                              applied only to even-numbered rows*/
+    background-color: darkgray;
+    
+}
+
+input {
+    width:96%;
+}
+
+textarea {
+    width:98%;
+    height:50px;
+}

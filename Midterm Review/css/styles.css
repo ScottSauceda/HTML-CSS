@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    
+  background-image: url("../images/super-fancy-bicycle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+#division {
+    
+}
+
+.reusable {
+    
+}
+
+table {
+    color: green;
+}
+
+th {
+    color: blue;
+}

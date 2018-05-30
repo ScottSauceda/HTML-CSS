@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+    a:link {
+            color: red;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: red;
+        }
+        
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        span {
+            font-weight: bold;
+            color: red;
+            
+        }
+
+        span:hover {
+            color: blue;
+        }
+        
+        .spanclass {
+            color: green;
+        }
+    
+        #spanid {
+            color: yellow;
+        }

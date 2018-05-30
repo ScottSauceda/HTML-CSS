@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+    background-color: #555;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #336;
+    font-size: 18px;
+    line-height: 24px;
+    border-top: 3px solid #336;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #333;
+    text-indent: 18px;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    /* BACKGROUND PROPERTIES */
+    background-image: url(../images/AS13-BG-1100w.jpg);
+    background-size: 100%; /* scale BG image to match */
+    /***** !!!! prevent bg image from scrolling !!!! *****/
+    background-attachment: fixed;
+    /* prevent bg image from tiling (repeating) */
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: #CDE;
+    /* position main over the container BG image */
+    width: 46%;
+    margin-left: 25%; /* indent main from left */
+    padding: 2%;
+    overflow: scroll;
+    height: 100%;
+}
+
+main img { /* scale main image with main div */
+    width: 100%;
+    height: auto;
+}
+
+/* for first paragraph drop cap: no indent */
+.firstPara {
+    text-indent: 0px;
+}
+
+/* also first paragraph drop cap: big, sunken first letter */
+.firstChar {
+    font-size: 100px;
+    line-height: 80px;
+    float: left; /* makes letter sink down */
+    color: #C00;
+    font-family: serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+

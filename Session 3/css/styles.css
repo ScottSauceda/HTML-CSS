@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+h1  {
+                font-size: 24px;
+                color: #093;
+                font-family: Verdana, Geneva, sans-serif;
+            }
+            
+            h3  {
+                font-size: 14px;
+                color: #066;
+                background-color: #093;
+            }
+            
+            p {
+                font-size: 12px;
+                line-height: 22px;
+                text-align: justify;
+            }
+            
+            ul {
+                font-family: monospace;
+                font-size: 16px;
+                font-weight: bold;
+                color: #063;
+                line-height: 32px;
+                /* do not have image > list-style-image: url(images/apple-bullet.png); */
+            }
+            
+            a:link {
+                color: #30F;
+                text-decoration: none;
+            }
+            
+            a:visited {
+                color: #F03;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: #6CF;
+                text-decoration: underline;
+            }

@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* Tag-based CSS */
+
+body {
+    font-family: sans-serif;
+    background-color: #EEF;
+    color: rgb(112, 109, 166);
+    /* text-align: center; */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: monospace;
+    color: beige;
+    background-color: #622;
+    padding: 5px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform:uppercase;
+}
+
+p {
+    text-indent: 30px;
+    font-size: 18px;
+    line-height: 28px; /* font plus gap */
+    text-align: justify;
+    margin: 0px 20px;
+}
+
+ul {
+   list-style-image: url(../images/icons/apple-bullet.png); 
+    line-height: 32px;
+}
+
+a {
+    color: #338;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.hideElement {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: dodgerblue;
+    color: #334;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem;
+}
+
+header {
+    background-color: #BBF;
+    height: 100px;
+    width: 100%;
+   /* position: fixed;
+    margin-bottom: 120px; */
+}
+
+nav {
+    margin-top: 50px;
+    background-color: paleturquoise;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.25rem; /* about 24px */
+    padding: 10px 1%;
+    margin: 0px;
+    background-color: paleturquoise;
+    width: 20%;
+}
+
+nav a:hover {
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+ /* aside {
+    background-color: bisque;
+    width: 31%;
+    float: left;
+    padding: 2%;
+    min-height: 1000px;
+} */
+
+main {
+    background-color: azure;
+    width: 100%;
+    float: right;
+    padding: 2%;
+    min-height: 1000px;
+}
+
+/* footer {   
+    background-color: mistyrose;
+    clear: both; /* do not float (bob up) */
+ /*    height: 50px; 
+}  */
+
+footer a {
+/* links are inside li in a ul list
+    make links run horizontally */
+    display: inline-block;
+    font-size: 1.2rem; /* about 24px */
+    padding: 5px 20px;
+    margin: 10px 0px;
+}
+
+footer a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/*       CSS added on for lab stage 2           */
+
+main {
+    text-align: justify;
+    margin: 0;
+    text-indent: 0;
+    margin: 0 10px;
+    float: right;
+    max-width: 100%;
+}
+
+span {
+    color: #903;
+    float: left;
+    font-family: serif;
+    font-size: 111px;
+    font-weight: bold;
+    line-height: 60px;
+    /*      T R B L */
+    padding: 4px 8px 0px 3px;
+}
+
+.img1 {
+    float: left;
+    margin: 20px;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.img2 {
+    margin: 20px;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+}
+
+ {
+    float: left;
+}
+
+ {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

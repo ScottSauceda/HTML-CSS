@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    margin: 0;
+    grid-template-areas: 
+        "leaderboard"
+        "logo"
+        "nav"
+        "main"
+        "newsletter"
+        "footercols"
+        "legal"
+        ;
+}
+
+#leaderboard {
+    grid-area: leaderboard;
+    background: tan;
+    
+}
+
+#logo {
+    grid-area: logo;
+    
+}
+
+body > nav {
+    grid-area: nav;
+}
+
+body > main {
+    grid-area: main;
+}
+
+form[name="newsletter"] {
+    grid-area: newsletter;
+}
+
+#columns {
+    grid-area: footercols;
+}
+
+body > footer > p {
+    grid-area: legal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body > nav ul {
+    display: flex;
+}
+
+/* ********
+
+   End Grid Areas
+
+******** */
+
+

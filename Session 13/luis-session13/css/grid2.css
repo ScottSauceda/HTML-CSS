@@ -1,0 +1,104 @@
+@charset: 'UTF-8';
+
+body {
+    background: #ABC;
+    color: #123;
+    font: sans-serif 1.1rem;   
+}
+
+.wrapper {
+    display: grid;
+    background: #579;
+    padding:10px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-gap: 20px; /* gutter */
+    grid-template-areas: 
+        "header" 
+        "main" 
+        "aside" 
+        "footer";
+}
+
+header, aside, footer, main {
+    background-color: #DDD;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header {
+    grid-area: header;
+    background-image: url(../images/balloon-header.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+}
+
+.headerinset{
+    background: rgba(224,124,34,.4);
+    padding: 0px 20px;
+    border: 2px solid #c85300;
+    width: 60%;
+    font: 1rem;
+    border-radius: 5px;
+}
+
+main {
+    grid-area: main;
+    background: #eee;
+        
+}
+aside{
+    grid-area: aside;
+}
+footer{grid-area: footer;}
+
+@media (min-width:650px) {
+    .wrapper {
+        grid-template-columns: 30% 65%;
+        grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer"
+    }
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.5rem;
+    text-indent: 2rem;
+}
+
+ul {
+    list-style-image: url('../images/balloon-icon.png')
+}
+
+aside a {
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #eee;
+    background-color: #88a;
+    padding: 15px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #888;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

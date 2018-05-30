@@ -1,0 +1,169 @@
+@charset "utf-8"; 
+
+body {
+    background-color: azure;
+    color: black;
+}
+
+/* HTML5 Styles */
+
+#container {
+    background-color: #abc;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #123;
+    color: yellow;
+    height: 100px;
+}
+
+nav {
+    background-color: #ace;
+    font-weight: bold;
+}
+
+main {
+    background-color: #fbb;
+    width: 65%;
+    min-height: 300px;
+    float: right;
+}
+
+aside {
+   background-color: #bbf;
+   width: 35%;
+    min-height: 300px;
+    float: left
+}
+
+footer {
+    background-color: #159;
+    width: 100%;
+    min-height: 100px;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media Query for Responsive Design CSS to use if the viewport is less than 800px */
+@media only screen and (max-width: 800px) {
+    
+    body {
+       background-color: aqua; /* just to see it change */ 
+    }
+    
+    #container {
+        background-color: pink; /* just to see it change */
+    }
+    
+    aside, main { /* switch to 1-col layout */
+    width: 96%;
+    min-height: 250px;
+    padding: 2%;
+    float: none; /* no floats in 1-col layout */
+}
+    
+}  /* end @media only Media Query */
+
+/*                      CSS ATTRIBUTE SELECTORS                     */
+
+/*
+p[id] {
+    
+}
+*/
+
+/*
+p[class] {
+    
+}
+*/
+
+/*
+p[id="green"]  or #green  {
+    
+}
+*/
+
+/* targets multiple ID's that include green */
+/*
+p[id^="green"] {
+    
+}
+*/
+
+/*
+.child {
+    
+}
+*/
+
+/* includes */
+/*
+p[class^="child"] {
+    
+}
+*/
+
+/* includes and is case sensited */
+/*
+img[alt*="Cat"] {
+    
+}
+*/
+
+/* ends with */
+/*
+img[alt$="Cat"] {
+    
+}
+*/
+
+/* targeting pseudo elements */
+
+/*
+p:: first-line {
+    
+}
+*/
+/* Targets the first line in a <p> tag */
+
+/*
+p::first-letter{
+    
+}
+*/
+/* Targets the first characeter in a <p> tag */
+
+/*
+p::first-child{
+    
+}
+*/
+/* Targets the first tag in all <p> tags */
+
+/*
+p::nth-child(0) {
+  Targets the first p-tag on the page  
+}
+*/
+
+/*
+p::nth-child(2) {
+  Targets the third p-tag on the page  
+}
+*/

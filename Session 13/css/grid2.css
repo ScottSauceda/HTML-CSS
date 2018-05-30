@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.wrapper {
+    display: grid;
+    background: #110202;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    min-height: 500px;
+    min-width: 480px;
+    
+    grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer"
+        ;
+    
+}
+
+header {
+    grid-area: header;
+    min-height: 175px;
+    min-width: 480px;
+    background-image: url("../images/balloon-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    grid-area: main;
+    background-color: #380b0b;
+    width: 66%;
+    min-height: 600px;
+    float: right;
+    padding: 2%;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #653232;
+    width: 26%;
+    min-height: 300px;
+    float: left;
+    padding: 2%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #b08d8d;
+    text-align: center;
+    min-height: 100px;
+    clear: both; /* prefents footer from floating */
+}
+
+/* Media Query Starts */
+
+@media (min-width: 650px) {
+    .wrapper {
+        grid-template-columns: 30% 65%;
+        grid-template-areas:
+          "header header"
+            "aside main"
+            "footer footer"
+    }
+} /* Media Query Ends */

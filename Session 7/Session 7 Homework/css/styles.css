@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    min-height: 100vh;
+    border: 2px solid white;
+}
+
+main {
+    background: blue;
+    width: 32%;
+    float: left;
+    border: 2px solid red;
+}
+
+aside {
+    background: red;
+    width: 32%;
+    float: left;
+    border: 2px solid green;
+}
+
+.sidebar2 {
+    background: green;
+    width: 34%;
+    float: right;
+    border: 2px solid blue;
+}
+
+.container p {
+    width: 98%;
+    margin: 1%;
+}
+
+@media only screen and (max-width:800px) {
+
+    .container p {
+    width: 31;
+    margin: 1%;
+}
+    
+}

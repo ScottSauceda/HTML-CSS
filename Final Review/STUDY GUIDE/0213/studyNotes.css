@@ -1,0 +1,18 @@
+creating Bars
+<nav>
+<ul>
+	<li><a>href=""</a></li> 
+	</ul>
+
+</nav>
+
+/* CSS Notes*/
+
+nav ul {
+	display:flex;
+	justify-content: space-around;
+	list-style-type: none;
+	
+}
+
+<form class="form1" action="css/stylesheets.css" method="post">

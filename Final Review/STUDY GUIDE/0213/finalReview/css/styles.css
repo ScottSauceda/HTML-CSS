@@ -1,0 +1,123 @@
+.wrapper{
+	display: grid;
+    grid-template-areas: 
+        "mainarea mainarea mainarea"
+        "navigation navigation navigation"
+        "footer footer footer";
+}
+
+
+
+main{
+    grid-column: 3;
+    display: grid;
+/*
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+*/
+
+}
+
+nav{grid-area:navigation;}
+main{grid-area:mainarea;}
+footer{grid-area:footer}
+
+*{
+    font-size:14px;
+}
+
+*[class^="div"]{
+	width:200px;
+	height:100px;
+}
+
+.div1{
+	background:orange;
+    grid-row:2;
+    grid-column:1;
+}
+
+.div2{
+	background:yellow;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.div3{
+	background:green;	
+}
+
+.div4{
+	background:red;	
+}
+
+
+
+@media (min-width:800px){
+/*This only takes effect at screens LARGER than 480px*/
+    .wrapper{
+        grid-template-areas:
+            "footer footer"
+            "mainarea mainarea"
+            "navigation navigation";
+    }
+    
+
+}
+
+
+
+
+/*
+.wrapper{
+    flex-direction: column;
+}
+nav{
+    justify-content: space-between;
+
+}
+*/
+
+
+/*
+    .div1{
+        float:left;
+    }
+    .div2{
+        float:right;
+    }
+    .div3{
+        float:right;
+        clear:right;
+    }
+    .div4{
+        float:left;
+        clear:both;
+    }
+*/
+
+nav a{
+    text-decoration:none;
+    color:black;
+    background:orange;
+    border-radius:15px;
+}
+
+.flex{
+    display:flex;
+}
+
+.example{
+    justify-content:space-between;
+}
+
+input:focus{
+    outline-color:purple;
+    
+}
+
+form:active{
+    background: #888;
+}
+
+

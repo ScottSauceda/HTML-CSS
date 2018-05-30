@@ -1,0 +1,111 @@
+@charset "utf-8"; 
+
+       body {
+          background-color: lightskyblue;
+        }
+        
+        #relative {
+            background-color: lightcoral;
+            color: lightgreen;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+        #absolute {
+            background-color: antiquewhite;
+            color: lightcoral;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+        #email {
+            background-color: lightseagreen;
+            color: papayawhip;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+        #anchor {
+            background-color: lightgoldenrodyellow;
+            color: cornflowerblue;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+          #whyBuy {
+            background-color: lightgoldenrodyellow;
+            color: cornflowerblue;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+           #pdf {
+            background-color: lightcoral;
+            color: lightgreen;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+         #image {
+            background-color: antiquewhite;
+            color: lightcoral;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+         #tables {
+            background-color: lightseagreen;
+            color: papayawhip;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+        }
+        
+         table {
+            background-color: papayawhip;
+            color: lightcoral;
+            min-height: 100px;
+            padding: 1rem; /* 10px to each side of the div */
+            margin: 0 auto;
+        }
+
+
+        h1 {
+            font-size: 24px;
+            color: #119;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        
+        h3 {
+            font-size: 14px;
+            color: #119;
+            background-color: #fff;
+        }
+        
+        p {
+            font-size: 12px;
+            line-height: 22px;
+            text-align: justify;
+        }
+        
+        ul {
+            font-family: monospace;
+            font-size: 16px;
+            font-weight: bold;
+            color: #063;
+            line-height: 32px;
+        }
+        
+        a:link {
+            color: #30f;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: #f03;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: #6cf;
+        }

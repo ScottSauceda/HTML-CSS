@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#employees { /*Employees table id*/
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+#employees td, #employees th { /*tds and ths for employees table id*/
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+#employees tr:nth-child(odd){
+    background-color: aliceblue;
+    color: maroon;
+} /*Changes the color of even rows*/
+
+#employees tr:nth-child(even){
+    background-color: papayawhip;
+    color: cornflowerblue;
+} /*Changes the color of even rows*/
+
+#employees tr:hover 
+    {background-color: #ddd;
+    color: pink;
+} /*Changes the color of rows when you hover over them*/
+
+#employees th { /*ths for employees table id*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: cornflowerblue; /* ERROR */
+    color: white;
+}
+
+.numtd {
+    text-align:right;
+}
+    

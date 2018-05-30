@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@media only screen and (max-width:800px) {
+     #burgerDiv {
+        visibility: visible;
+    }
+}
+
+.burger {
+    visibility: hidden;
+    background-color: #EEE;
+    float: right; /* position burger at right */
+    border-radius: 5px; /* slightly rounded corners */
+    border: 2px solid #333; /* thin dark gray border */
+    cursor: pointer; /* like a button on mouseover */
+    width: 35px; /* not too big, cuz it's a "button" */
+    text-align: center; /* for centering burger lines */
+    padding: 5px; /* inset the burger lines */
+    margin: 5px; /* space around burger */
+}
+
+navy {
+    visibility: hidden;
+}
+
+.burger-line {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px;
+}
+
+.burger:hover {
+    background-color: #ccc;
+}

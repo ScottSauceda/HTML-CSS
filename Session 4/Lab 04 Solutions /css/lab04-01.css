@@ -1,0 +1,15 @@
+/* NO BULLETS */
+ul {
+    list-style: none;
+}
+
+div {
+    /* width: 100px; */
+    background-color: azure;
+    padding: 20px;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 30px;
+}

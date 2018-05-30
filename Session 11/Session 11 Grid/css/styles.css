@@ -1,0 +1,205 @@
+@charset "utf-8"; 
+
+body {
+    background-color: azure;
+    color: black;
+}
+
+/* HTML5 Styles */
+
+#container {
+    background-color: #abc;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #123;
+    color: yellow;
+    height: 100px;
+}
+
+nav {
+    background-color: #ace;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+}
+
+main {
+    background-color: #fbb;
+    width: 55%;
+    min-height: 300px;
+    float: right;
+}
+
+aside {
+   background-color: #bbf;
+   width: 35%;
+    min-height: 300px;
+    float: left
+}
+
+footer {
+    background-color: #159;
+    width: 100%;
+    min-height: 100px;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.burger {
+    visibility: hidden;
+    background-color: #eee;
+    float: right; /* position burger at right */
+    border-radius: 5px; /* slightly rounded corners */
+    border: 2px solid #333; /* thin dark gray border */
+    cursor: pointer; /* likea button on mouseover */
+    width: 35px; /* not too big, cuz it's a "button" */
+    text-align: center; /* for centering burger lines */
+    padding: 5px; /* inset the burger lines */
+    margin: 5px; /* space around burger */
+}
+
+.burger-line {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px;
+}
+
+.burger:hover {
+    background-color: #ccc;
+}
+
+.material-icons {
+    color: white;
+}
+
+.fa {
+    color: white;
+}
+
+
+/* Media Query for Responsive Design CSS to use if the viewport is less than 800px */
+@media only screen and (max-width: 800px) {
+    
+    body {
+       background-color: aqua; /* just to see it change */ 
+    }
+    
+    #container {
+        background-color: pink; /* just to see it change */
+    }
+    
+    aside, main { /* switch to 1-col layout */
+    width: 96%;
+    min-height: 250px;
+    padding: 2%;
+    float: none; /* no floats in 1-col layout */
+}
+    
+    .burger {
+        visibility: visible;
+    }
+    
+    nav {
+/*        visibility: hidden;*/
+        position: absolute;
+        width: 70%;
+        z-index: 5;
+    }
+    
+    nav ul li { /* the individual nav list items */
+    display: block;
+    background-color: cadetblue;
+    padding: 10px;
+    width: 90%;
+    }
+    
+    nav ul li a { /* text color of list item links */
+        color: aliceblue;
+    }
+    
+    nav ul li:hover { /* change bg color on mouseover */
+        background-color: cornflowerblue;
+    }
+    
+}  /* end @media only Media Query */
+
+/*                      CSS ATTRIBUTE SELECTORS                     */
+
+p[id] {
+    
+}
+
+p[class] {
+    
+}
+
+p[id="green"] /* or #green */ {
+    
+}
+
+/* targets multiple ID's that include green */
+p[id^="green"] {
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.child {
+    
+}
+
+/* includes */
+p[class^="child"] {
+    
+}
+
+/* includes and is case sensited */
+img[alt*="Cat"] {
+    
+}
+
+/* ends with */
+img[alt$="Cat"] {
+    
+}
+
+/* targeting pseudo elements */
+
+p:: first-line {
+    
+}
+/* Targets the first line in a <p> tag */
+
+p::first-letter{
+    
+}
+/* Targets the first characeter in a <p> tag */
+
+p::first-child{
+    
+}
+/* Targets the first tag in all <p> tags */
+
+p::nth-child(0) {
+/*  Targets the first p-tag on the page  */
+}
+
+p::nth-child(2) {
+/*  Targets the third p-tag on the page  */
+}
