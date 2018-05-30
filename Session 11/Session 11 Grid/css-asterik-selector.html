@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+<!--    <link href="css/styles.css" rel="stylesheet" />-->
+      
+      <style>
+      
+          * {
+/*              font-size: 18px;*/
+              padding: 18px;
+          }
+          
+          html {
+              background-color: coral;
+          }
+          
+          body {
+              background-color: aquamarine;
+          }
+          
+          h1 {
+              background-color: gold;
+          }
+          
+          .wordly {
+              background-color: pink;
+          }
+          
+          main {
+              background-color: maroon;
+          }
+          
+          figure {
+              color: beige;
+              margin-left: 10%;
+              border: 3px solid aqua;
+          }
+          
+          figure a {
+              color: blue;
+              text-decoration: none;
+              font-family: sans-serif;
+              font-weight: bold;
+              font-size: 21px;
+          }
+          
+          a[href="http://www.nintendo.com"] {
+              color: olivedrab;
+              text-decoration: underline;
+              text-transform: uppercase;
+          }
+          
+          a[href="http://www.nintendo.com"]:hover {
+              color: yellow;
+              text-decoration: none;
+          }
+          
+          p, h3 {
+              color: white;
+              font-family: sans-serif;
+          }
+          
+          h3 + p { /* target 1st paragraph after each h3 */
+              background-color: yellow; /* overrides white of p */
+              color: purple;
+          }
+          
+          li {
+              font-family: monospace;
+              font-size: 24px;
+              color: beige;
+          }
+          
+          li:nth-of-type(2) {
+              background-color: aliceblue;
+              color: blue;
+              padding: 5px;
+          }
+          
+          li:nth-of-type(3) {
+              background-color: aqua;
+          }
+          
+          .hilite {
+              background: yellow;
+              color: #333;
+          }
+          
+          section .hilite {
+              background: pink;
+          }
+          
+          section.hilite {
+              background: cornflowerblue;
+              color: blue;
+          }
+          
+          aside p:nth-of-type(2) {
+              background-color: papayawhip;
+          }
+          
+/*          first letter selectors apply to multiple paragraphs */
+          
+          .chapterText {
+              text-align: justify;
+              font-size: 21px;
+              line-height: 30px;
+              width: 650px;
+              
+          }
+          
+          /* first letter of first  paragraph gets drop cap */
+          p:nth-of-type(1):first-letter {
+              font-size: 111px;
+              color: olivedrab;
+              float: left;
+              padding-right: 10px;
+              line-height: 80px;
+          }
+          
+          .btn {
+              display: block;
+              font-size: 18px;
+              font-family: sans-serif;
+              margin: 20px;
+              background: #999;
+              color: #eee;
+              width: 480px;
+              padding: 5px 20px;
+              border-radius: 5px;
+              border: 2px solid #555;
+          }
+          
+          /* in addition to .btn, some buttons also get the .btn-good or .btn-warn class applied */
+          .btn-good {
+              background: #494;
+              color: #cec;
+          }
+          
+          .btn-warn {
+              background-color: #944;
+              color: #ecc;
+          }
+          
+          .shout {
+              text-transform: uppercase;
+              font-weight: bold;
+          }
+          
+          .btn:hover {
+              cursor: pointer;
+              background: #ccc;
+              color: #ff0;
+          }
+          
+          .btn-good:hover {
+              background-color: #8c8;
+              color: #dfd;
+          }
+          
+          .btn-warn:hover {
+              background-color: #c88;
+              color: #ecc;
+          }
+          
+      </style>
+    
+  </head>
+    
+  <body>
+    <div id = "container">
+        
+      <header>
+<!--         The header content will go here.  -->
+      </header>
+        
+      <nav>
+<!--        The nav content will go inside this div box.  -->
+      </nav>
+        
+       <main>
+         <h1>Hello <span class="wordly">World</span></h1>
+           
+         <figure>
+           <img src="images/papermario.png" alt="Super Paper Mario" />
+           <figcaption style="color: white;">
+             It's ya boi Paper Mario, Mushroom Kingdom circa 2018  
+           </figcaption>
+          <a href="http://www.nintendo.com">Nintendog World</a>
+          <a href="http://www.playstation.com">Playstation Land</a>
+          <h3>Testing Sibling Selector h3 + p</h3>
+          <p>This is the 1st p after the h3. It gets the sibling selector style, which makes the background yellow.</p>
+          <p>This is the 2nd p after the h3. It is ignored by the sibiling selector style.</p>
+             
+          <h3>Wild Dogs</h3>
+          <ul>
+            <li>Wolves</li>   
+            <li>Coyotes</li>   
+            <li>Jackals</li>   
+            <li>Dingos</li>   
+          </ul>
+             
+         </figure>
+           
+        <section>
+          <p class="hilite">This paragraph in a section is pink.</p>   
+        </section>
+        <article>
+          <p class="hilite">This paragraph in an article is yellow</p>   
+        </article>
+        <section class="hilite">
+           <p>This section paragraph uses the hilite class, so should be blue</p>
+        </section>
+           
+        <p class="chapterText">Oh. You need a little dummy text for your mockup? How quaint. I bet you're still using Bootstrap too… Paragraphs: Type: Hipster, ne</p>
+        <p class="chapterText">Oh. You need a little dummy text for your mockup? How quaint. I bet you're still using Bootstrap too… Paragraphs: Type: Hipster, ne</p>
+        <p>Oh. You need a little dummy text for your mockup? How quaint. I bet you're still using Bootstrap too… Paragraphs: Type: Hipster, ne</p>
+        <p>Oh. You need a little dummy text for your mockup? How quaint. I bet you're still using Bootstrap too… Paragraphs: Type: Hipster, ne</p>
+        <p>Oh. You need a little dummy text for your mockup? How quaint. I bet you're still using Bootstrap too… Paragraphs: Type: Hipster, ne</p>
+           
+           
+        <h3>
+        <button class="btn">Class btn</button>   
+        <button class="btn btn-good">btn btn-good</button>   
+        <button class="btn btn-warn">btn btn-warn</button>   
+        <button class="btn shout">btn shout</button>   
+        <button class="btn btn-good shout">btn btn-good shout</button>   
+        <button class="btn btn-warn shout">btn btn-warn shout</button>   
+        </h3>
+             
+       </main>
+      
+       <aside>
+ <h3>Testing Sibling Selector h3 + p</h3>
+          <p>This is the 1st p after the h3. It gets the sibling selector style, which makes the background yellow.</p>
+          <p>This is the 2nd p after the h3. It is ignored by the sibiling selector style.</p>
+       </aside> 
+        
+      <footer>
+<!--        The footer content will go inside this div box.-->
+      </footer>
+        
+    </div> <!-- end container -->
+  </body>
+
+</html>

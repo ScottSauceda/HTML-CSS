@@ -1,0 +1,270 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Advanced CSS selectors</title>
+<!-- CSS BEGINS -->
+<style>
+
+
+    * {
+        /* padding:0; margin:0;    
+        font-size: 18px;
+        padding:36px; */
+    } 
+    
+    html {
+      background: coral;  
+    }
+    
+    h1 {background: gold; color:blue;}
+    
+    .worldly {background: pink;}
+    
+    .container {background: maroon;}
+    
+    figure {
+        color: beige;
+        margin-left:10px;
+        border:3px solid aqua;
+        
+    }
+    
+    
+    
+    a[href="https://codeimmersives.com"]{
+    
+        color:red;
+        
+    }
+    
+     a[href="https://codeimmersives.com"]:hover {
+    
+     color:yellow; text-decoration: none;    
+    }
+    
+    
+    p, h3 {
+        
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    h3 + p {
+        
+        background: yellow;
+        color: purple;
+    }
+    
+    
+    li {
+        
+        
+        font-family: monospace;
+        font-size:24px;
+        color:beige;
+        
+    }
+    
+    li:nth-of-type(2) {
+        background: aliceblue;
+        color:blue;
+        padding: 5px;
+        
+        
+    }
+    
+    section .hilite {
+        
+        background: pink;
+    }
+    
+    .hilite {background: yellow;
+    color:#333;}
+    
+    
+    section.hilite {
+        
+        background: cornflowerblue;
+        color:blue;
+    }
+    
+    
+    
+</style>    
+</head>
+<body>
+  <div class="container">
+ <h1>Hello <span class="worldly">World</span></h1>
+      
+      
+<figure>
+    <img src="images/loft2.jpg" alt="Loft 2">
+    <figcaption>lovely Brooklyn lofts.</figcaption>       
+</figure> 
+      
+      <a href="https://codeimmersives.com">Code Immersives</a>
+      <br/>
+      <a href="https://amazon.com">Amazon</a>
+      
+
+  
+  
+ <h3>This is my header 3 tag </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque ligula in mi porttitor, eget porttitor ex sodales. Duis tempus pharetra metus vel pharetra. Ut id purus eget mi pretium fringilla. Phasellus sit amet luctus libero. Pellentesque feugiat, nulla vel venenatis pellentesque, dui sapien aliquam orci, id molestie dolor dui ac nunc. Vivamus ut est sed erat ornare iaculis. Cras convallis risus dapibus justo molestie mattis. Mauris aliquam lectus velit, a pellentesque metus venenatis tempor.</p>
+    
+      <p>More text in another paragraph</p>
+  
+     
+      
+      
+      <h3>Wild Dogs</h3>
+      <ul>
+          <li>Wolves</li>
+          <li>Coyotes</li>
+          <li>Jackals</li>
+          <li>Dingos</li>
+      </ul>
+      
+  
+<section class="hilite">
+<p class="hilite">This paragraph section is pink</p>       
+</section> 
+      
+<article>
+<p class="hilite">This paragraph in an article is yellow.</p>      
+</article>  
+      
+<section class="hilite">
+Another section with a class of hilite
+</section>      
+      
+<!-- BUTTON STYLES -->
+<style>
+    .btn {
+        display: block;
+        font-size: 18px;
+        margin:20px;
+        padding:20px;
+        background: #999;
+        COLOR:#EEE;
+        width:480px;
+        border-radius:5px;
+        border:2px solid #555;
+        
+    }     
+      
+    .btn-good {background:#494;
+        color: #cec;
+    
+    }
+    
+    .btn-warn {background:#944;}
+    
+    
+    .shout {text-transform: uppercase; font-weight: bold;}
+    
+    
+    .btn:hover {
+        cursor:pointer;
+        background:#ccc;
+        Color:#ff0;
+        
+        
+    }
+    
+    .btn-good:hover {
+        
+        background:#8c8;
+        color:#ecc;
+    }
+    
+    .btn-warn:hover {
+        
+        background: #c88;
+        color:#ecc;
+    }
+    
+</style>      
+      
+      
+
+<h3>Buttons and their classes</h3>
+    <button class="btn">Class: btn</button>  
+      <button class="btn btn-good">Class: btn, btn-good</button>  
+      <button class="btn btn-warn">Class: btn, btn-warn</button>  
+      <button class="btn shout">Class: btn, shout</button>  
+      <button class="btn btn-good shout">Class: btn, btn-good, shout</button>  
+      <button class="btn btn-warn shout">Class: btn, btn-warn shout</button>  
+      
+ 
+      
+  </div>  
+    
+<style>
+    
+body {
+    font-size: 12px;
+    background: #BBB;
+    }
+    
+    h1 {
+        font-size: 5em;
+        margin-left:2em;
+        margin-top: 0.5em;
+        
+    }
+    
+    h2 {
+        width:25em;
+        font-size:3em;
+        margin-left: 2em;
+        margin-top: 2.5em;
+    }
+    
+    p {
+        width:40em;
+        text-indent:2em;
+        margin-left:5em;
+        line-height:1.5em;
+        font-size:1.5em; /* 18px = 12(font-size of 
+                            parent)*1.5(1.5 em) */
+    }
+    
+    .ptag {
+        font-size:22.5px;
+    }    
+
+    section {
+        font-size:1.25em; /* 12 * 1.5 * 1.25      
+                            = 18*1.25 = 22.5 */
+    }
+    
+    p strong{
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    html {
+        font-size:20px;
+    }
+    
+    
+</style>
+    
+        
+    <hr/>
+    <h1>Everything's relative when using em units</h1>
+    <p>The em is a unit of size used instead of pixels. It can be used for font-size, border, border-radius, margin, padding - on any property that can accept a value denominated in pixels.</p>
+    
+    <section>
+    <h1>Everything's relative when using em units</h1>
+       <p class="ptag">The em is a unit of size used instead of pixels. <strong>It can be used for font-size, border, border-radius, margin, padding - on any property that can accept a value denominated in pixels.</strong></p>
+    </section>
+    
+    <h3>This is an h3 tag.</h3>
+    
+</body>
+</html>

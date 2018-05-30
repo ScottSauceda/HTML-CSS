@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Flexbox</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <style>
+    
+        body {
+            background-color: azure;
+        }
+        
+        .container {
+            display: flex;
+            height: 98vh;
+            min-width: 480px;
+            justify-content: center;
+            border: 3px solid orange;
+/*            flex-wrap: wrap;*/
+            align-content: center;
+/*            align-content: flex-end;*/
+/*            align-content: flex-start;*/
+/*            align-content: stretch;*/
+/*            align-content: space-around;*/
+/*            flex-direction: row-reverse;*/
+/*            flex-direction: row;*/
+/*            flex-direction: column;*/
+/*            flex-direction: column-reverse;*/
+            
+                /* flex-wrap + flex direction = flex-flow */
+                flex-flow: row wrap-reverse;
+            
+        }
+        
+        .boxy {
+            font-size: 48px;
+            border: 3px solid aqua;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            height: 85px;
+        }
+        
+        .boxA {
+            background-color: lavender;
+        }
+        
+        .boxB {
+            background-color: honeydew;
+        }
+        
+        .boxC {
+            background-color: peachpuff;
+        }
+        
+        .boxD {
+            background-color: thistle;
+        }
+        
+        .boxE {
+            background-color: papayawhip;
+        }
+        
+        .boxF {
+            background-color: aliceblue;
+        }
+        
+    </style>
+    
+  </head>
+    
+  <body>
+    <div class = "container">
+      <div class="boxy boxA">Div A</div>
+      <div class="boxy boxB">Div B</div>
+      <div class="boxy boxC">Div C</div>
+      <div class="boxy boxD">Div D</div>
+      <div class="boxy boxE">Div E</div>
+      <div class="boxy boxF">Div F</div>
+    
+      <section class="boxy boxA">Section A</section>
+      <section class="boxy boxB">Section B</section>
+      <div class="boxy boxC">Section C</div>
+      <section class="boxy boxD">Section D</section>
+      <section class="boxy boxE">Section E</section>
+      <section class="boxy boxF">Section F</section>
+    </div> <!-- end container -->
+      
+  </body>
+
+</html>

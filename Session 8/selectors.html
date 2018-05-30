@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Selectors</title>
+      
+    <style>
+        
+        .green {
+            color: green;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        .responsive {
+            
+        }
+        
+        #first {
+            color: blue;
+        }
+        
+                                /* Compound CSS Selectors */
+        
+        p[id="first"] {
+            font-weight: bold;
+        }
+        
+        p[class] {
+            color: orange;
+        }
+
+                                 /* Target ID= first, fire, conifer, winterfir, zzfir1 */
+        
+        p[id^="fir"] {
+            font-size: 1.4em;
+        }
+
+                                /* Targer ID= green, greenlight */
+        
+         p[class^="green"] {
+            font-size: 1.4em;
+        }
+        
+        img[alt*="Loft"] {
+            border: 5px solid blue;
+        }
+        
+        img[alt$="3"] {
+            border-radius: 50%;   
+        }
+        
+                                /* Psuedo Elements */
+        
+        p::first-line {
+            font-weight: bold;
+        }
+        
+        p::first-letter {
+            font-size:4em;
+        }
+        
+        img:first-child {
+            width: 50%;
+        }
+        
+          img:nth-child(3) {
+            filter: grayscale(90%);
+        }
+        
+        li:nth-child(odd) {
+            background: #ccc;
+        }
+        
+        li:nth-child(even) {
+            background: red;
+        }
+        
+        
+        
+    </style>
+      
+  </head>
+    
+  <body>
+      
+      <img src="images/loft3.jpg" alt="Loft 1" />
+      
+    <div id="container">
+    
+      <p id="first" class="green1" >Flexitarian tbh PBR&B consectetur taiyaki veniam, pabst fingerstache marfa pour-over culpa master cleanse qui chicharrones quis. Craft beer tbh listicle venmo, 8-bit exercitation laboris meditation poke jianbing art party four loko williamsburg lomo. Authentic etsy fugiat twee pabst before they sold out velit. Hella man braid voluptate synth.</p>
+        
+     <img src="images/loft3.jpg" alt="Loft 1" />
+
+     <p class="greenlight responsive" >Enamel pin shoreditch taxidermy ut, XOXO ramps tumeric. Officia microdosing wolf authentic tousled thundercats glossier. Mumblecore tumeric typewriter drinking vinegar activated charcoal, pabst synth mollit disrupt distillery quis microdosing yr tacos. Ut kitsch art party et enim synth irure sartorial schlitz hammock tbh. Reprehenderit excepteur brooklyn, occupy cred artisan four dollar toast magna. Sartorial hashtag tilde et, migas ethical typewriter subway tile in la croix offal.</p>
+
+     <p class="green" >Flexitarian gluten-free sint, messenger bag forage live-edge banjo irony yuccie mumblecore paleo yr lumbersexual dolore. Polaroid shaman excepteur hashtag eu pickled. Excepteur dolor vinyl, subway tile food truck next level everyday carry cillum VHS actually mumblecore tofu voluptate tote bag put a bird on it. Keffiyeh yuccie listicle disrupt dolore YOLO vinyl bicycle rights lo-fi copper mug. Chambray gastropub live-edge, lomo pabst flannel et cupidatat chartreuse disrupt banh mi food truck 8-bit. Veniam fingerstache health goth, vape blog gastropub nulla ut cray irony chambray austin drinking vinegar eiusmod ugh. Mustache aute single-origin coffee reprehenderit lo-fi pour-over, ex readymade bitters.
+    
+        <img src="images/loft3.jpg" alt="Loft 3" />
+        <img src="images/loft3.jpg" alt="Loft 3" />
+        <img src="images/loft3.jpg" alt="Loft 3" />
+    </p>
+
+     <p class="red" >Cliche chicharrones squid roof party tattooed laboris. Flexitarian banh mi ethical, cronut marfa next level literally sint portland man braid vexillologist asymmetrical drinking vinegar franzen. Before they sold out labore small batch PBR&B wolf hexagon vaporware meggings truffaut irure proident cupidatat. Bespoke crucifix velit, VHS pinterest incididunt ad gochujang vice fanny pack man bun pug fingerstache shoreditch. Shabby chic pariatur hell of biodiesel single-origin coffee yr magna pinterest you probably haven't heard of them gastropub sriracha dreamcatcher officia keytar street art.</p>
+
+     <p class="redlight" >Banjo bespoke lo-fi lomo, irony ut banh mi sriracha sustainable kale chips mumblecore semiotics ea pok pok fashion axe. Raclette incididunt affogato etsy kale chips gentrify thundercats pok pok hammock cred mixtape forage swag hell of sint. Authentic lyft affogato bitters glossier hashtag hella. Meh laboris banh mi photo booth consectetur deep v church-key butcher subway tile elit 90's cloud bread tempor. Cardigan fam flexitarian eiusmod enamel pin. Organic roof party vexillologist 3 wolf moon kickstarter polaroid sed labore tbh cardigan echo park tumeric woke cliche. Ea subway tile kickstarter tofu butcher VHS quinoa organic forage craft beer +1 roof party intelligentsia sint.</p>
+
+        
+    </div>
+      
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+      <li>Fifth</li>
+      <li>Sixth</li>
+      <li>Seventh</li>
+      <li>Eighth</li>
+    </ul>
+  
+  </body>
+</html

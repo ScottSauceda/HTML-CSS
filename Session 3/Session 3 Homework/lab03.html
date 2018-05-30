@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 03</title>
+      
+    <meta charset="UTF-8" />
+      
+    <meta name="keywords" content="Lab 03, Forms" />
+      
+    <meta name="description" content="Third Lab Code Immersives, Creating Forms" />
+      
+    <style>
+    
+        main {
+            width: 30%;
+            border: 2px solid gray;
+        }
+      
+    </style>  
+    
+      
+  </head>
+    
+  <body>
+    
+    <div class="container">
+        
+      <main>
+        
+      <form id="myform" name="myform" method="post" action="thankyou.html">
+          
+        <h1>Create Profile</h1>
+          
+        <input type="text" id="fullName" name="fullName" placeholder="First & Last Name" required />
+          
+          <br />
+        
+        <input type="email" id="email" name="email" placeholder="email" required />
+          
+          <br />
+          
+        <input type="password" id="password" name="passowrd" placeholder="password" required />
+          
+          <br />
+          
+        Stay logged in<input type="checkbox" id="checkbox" name="checkbox" checked />
+          
+          <br />
+          
+        Pick your layout color: <input type="color" id="colorpicker" name="checkbox" />
+          
+          <br />
+          
+         Your birthdate:<input type="date" id="datepicker" name="datepicker" />
+          
+            <br />
+          
+          <input type="range" id="range" name="range" min="1" max="10" value="0" step="1" />
+          
+            <br />
+          
+          <input type="submit" value="Submit Form" />
+          
+          <!-- <button>Submit Button</button> -->
+          
+          
+      </form>
+      
+        </main>
+          
+    </div>
+    
+  </body>
+    
+</html>

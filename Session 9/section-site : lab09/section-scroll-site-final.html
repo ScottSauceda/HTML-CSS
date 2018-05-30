@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <title>Section Scroll Site</title>
+    <meta charset="UTF-8">
+    
+    <!-- this css file does not exist--you have to make it! -->
+    <link href="css/section-scroll-site.css" rel="stylesheet" type="text/css">
+    
+    <style>
+        
+    </style>
+    
+</head>
+    
+<body>
+    
+    <div id="container">
+        
+        <header>
+            <!-- HERO goes HERE. THe "Hero" is the big image that greets the user at the home page and is at least half-screen height. It's like an extra-tall banner -->
+        
+        </header>
+        
+        <nav>
+            <!-- Anchor Links jump down this page--do not go to other pages -->
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#gallery"><li>Gallery</li></a>
+                <a href="#blog"><li>Blog</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+        
+        <section id="about">
+            
+            <h1>About Me, Myself and I</h1>
+            
+            <table>
+                <!-- table to display profile pic and some bio data find pic in images/members -->
+                <tr>
+                    <td rowspan="3"><img class="biopic" src="images/biopic.jpg" alt="bio picture"></td>
+                    <td>Name: Abbernathy Wigglewart</td>
+                </tr>
+                <tr>
+                    <td>Occupation: Wizard</td>
+                </tr>
+                <tr>
+                    <td>Age: 35</td>
+                </tr>
+            </table>
+            
+            <p>
+                Actually semiotics DIY lo-fi post-ironic lumbersexual intelligentsia cardigan fanny pack fingerstache tumblr cray disrupt pinterest pork belly. Street art listicle photo booth, semiotics 90's master cleanse forage irony mixtape tote bag. Portland green juice squid farm-to-table post-ironic, scenester street art slow-carb seitan. Synth asymmetrical ethical la croix deep v typewriter mustache YOLO mumblecore hot chicken trust fund tilde.
+            </p>
+            
+            <p>
+                Everyday carry godard art party raclette marfa. Hot chicken lyft ugh actually vinyl shaman freegan dreamcatcher vaporware unicorn scenester pitchfork art party hexagon cloud bread. Vape palo santo intelligentsia, enamel pin letterpress brooklyn vexillologist fingerstache salvia four dollar toast tbh +1 echo park prism.
+            </p>
+            
+        </section>
+            
+        <section id="gallery">
+            
+            <h2>Gallery</h2>
+        
+            <img src="images/properties/ChelseaTerracesBldg1.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg2.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg3.jpg">
+            
+            
+            <img src="images/properties/ChelseaTerracesBldg1.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg2.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg3.jpg">
+            
+            
+            <img src="images/properties/ChelseaTerracesBldg1.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg2.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg3.jpg">
+            
+            
+            <img src="images/properties/ChelseaTerracesBldg1.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg2.jpg">
+            
+            <img src="images/properties/ChelseaTerracesBldg3.jpg">
+            <!-- etc. 12 images total in 4 rows of 3 -- NO TABLE ALLOWED!!
+            Hint: use floats -->
+            
+            <!-- do Media Queries that changes the width of the images so that we get 3, 2 then just 1 image per row -->
+        
+        </section>
+        
+        <!-- ect. you need 2 more sections: Blog (with sample blog) and Contact (with a Contact FORM) -->
+        <section id="blog">
+        
+            <div>
+            
+                <h1>My Blog</h1>
+                <h2>Blog Title</h2>
+                <h3>Blog Author</h3>
+            
+                <p>
+                    Blog content blah blah
+                </p>
+            
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            
+            <form name="myform" id="myform" method="post" action="Lab04.html">
+        <table>
+            <!--ROW1 NAME-->
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" name="name" required placeholder="..."></td>
+            </tr>
+            <!--ROW2 EMAIL-->
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="email" name="email" required placeholder="..."></td>
+            </tr>
+            <!--ROW3 PHONE-->
+            <tr>
+                <td>Phone:</td>
+                <td><input type="text" id="phone" name="phone" required placeholder="(###) ###-###"></td>
+            </tr>
+            <!--ROW4 MESSAGE PROMPT-->
+            <tr>
+                <td colspan="2">Message:</td>
+            </tr>
+            <!--ROW5 TEXTBOX-->
+            <tr>
+                <td colspan="2"><textarea name="message" id="message" placeholder="Dear..."></textarea></td>
+            </tr>
+            <!--ROW6 CHECKBOX-->
+            <tr>
+                <td>Want a Response?</td>
+                <td><input type="checkbox" name="wantresponse" id="wantresponse"></td>
+            </tr>
+            <!--ROW7 DATE-->
+            <tr>
+                <td>Date Available:</td>
+                <td><input type="date" name="date" id="date" required></td>
+            </tr>
+            <!--ROW8 TIME-->
+            <tr>
+                <td>Time Available:</td>
+                <td><input type="time" name="time" id="time" required></td>
+            </tr>
+            <!--ROW9 SUMBIT-->
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+        </form>
+            
+        </section>
+        
+        <footer>
+            
+           <!-- nav links go here but with the additon of FAQ and Privacy Policy.
+            The words Privacy and Policy must never break into 2 lines -->
+             <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#gallery"><li>Gallery</li></a>
+                <a href="#blog"><li>Blog</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+            
+        </footer>
+        
+    </div><!-- close #container -->
+    
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      
+    <title>HTML Lesson 3</title>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="NYC coding school, NYC coding and web development school, coding bootcamp, learn Javascript in NYC, etc etc" />
+    <meta name="description" content="NC coding school, NYC coding and web development school, coding bootcamp, learn Javascript in NYC, etc etc" />
+      
+<!--    CSS Sneak-Peak. Much more througout the course-->
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  
+      
+  </head> <!-- end head tag -->
+    
+  <body>
+      
+    <h1>HTML Forms</h1>
+      
+    <div id="form">
+      
+    <form name="form1" id="form1" method="post" action="form-procesor.php">
+        
+      <table width="600px" border="1px" cellpadding="5px">
+        
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="firstName" id="firstName" required /></td>
+        </tr>
+        
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lastName" id="lastName" required /></td>
+        </tr>
+          
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" id="email" required /></td>
+        </tr>
+          
+        <tr>
+          <td><input type="checkbox" name="offers" id="offers" value="yes" /> Send Me Offers </td>
+          <td><input type="checkbox" name="subscribe" id="subscribe" value="yes" /> Subscribe Me </td>
+        </tr>
+          
+        <tr>
+          <td>
+            <select name="faveBrowser" id="faveBrowser">
+              <option value="goog">Google Chrome</option>
+              <option value="apple">Apple Safari</option>
+              <option value="moz">Mozilla Firefox</option>
+              <option value="ms">Microsoft Edge</option>
+            </select>  
+          </td>
+          <td>
+            What's your favorite Web browser?  
+          </td>
+        </tr>
+          
+        <tr>
+          <td><input type="color" name="faveColor" id="faveColor" /></td>
+          <td>What's your favorite color?</td>
+        </tr>
+          
+        <tr>
+          <td>When do you want to leave for your Free Vacation?<br>
+            <input type="date" name="departDate4" id="departDate4" />  
+          </td>  
+            
+          <td>When do you want to return (2 weeks later)?<br>
+            <input type="date" name="returnDate" id="returnDate" />  
+            </td>
+        </tr>
+          
+        <tr>
+          <td colspan="2">
+           
+            <button name="submit" id="submit">Register</button>
+              <br>
+              <br>
+              Either button works
+              <br>
+              <br>
+            <input type="submit" name="submit" id="submit2" value="Go!"/>
+          </td>
+        </tr>
+      </table>
+        
+    </form>
+        
+  </div>
+      
+  </body> <!-- end body tag -->
+    
+</html>

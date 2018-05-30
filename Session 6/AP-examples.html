@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AP Examples</title>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+  
+    <style>
+        #div1 {
+            position: absolute;
+            background-color: orange;
+            left: 50px;
+            top: 10px;
+            width: 250px;
+            height: 167px;
+            z-index: 3;
+        }
+        
+          #div2 {
+            position: absolute;
+            background-color: maroon;
+            left: 800px;
+            top: 300px;
+            width: 250px;
+            height: 167px;
+            z-index: 2;
+            padding: 15px;
+            transform: rotate(5deg);
+        }  
+        
+          #div3 {
+            position: absolute;
+            background-color: aqua;
+            left: 850px;
+            top: 350px;
+            width: 250px;
+            height: 167px;
+            z-index: 1;
+            padding: 15px;
+            transform: rotate(-5deg);
+        }  
+    
+        #div1, #div2 {
+            box-shadow: 10px 10px 10px #333;
+            border: 3px solid yellow;
+        }
+        
+        #div1, #div2, #div1 img, #div2 img {
+            border-radius: 30px;
+        }
+        
+    </style>
+      
+  </head>
+    
+  <body>
+    <div id="div1">
+      <img src="../images/pikachu.png" alt="pikachu" width="250" height="auto" />
+    </div>
+      
+    <div id="div2">
+      <img src="../images/field-of-grass.png" alt="green, grassy field" width="250" height="auto"/>
+    </div>
+      
+    <div id="div3">
+      <img src="../images/ps4-pro-1tb-gaming-system.jpeg" alt="PS4, Video game system" width="200" height="auto" />
+    </div>
+      
+  </body>
+</html>

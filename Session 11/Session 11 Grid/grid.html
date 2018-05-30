@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <style>
+        
+        div{
+            border: 1px solid red;
+            padding: 1em;
+        }
+        
+        .grid-1 {
+            display: grid;
+/*            5 cols and 5 rows; each value is a col w or row h */
+/*            grid-template-columns: repeat(3, 1fr);*/
+            grid-template-columns: 250px 250px 250px;
+            
+/*            grid-column-gap: 5%;*/
+            grid-column-gap: 20px;
+            
+/*            grid-template-rows: repeat(3, auto);*/
+            grid-template-rows: auto auto auto;
+            
+            grid-row-gap: 20px;
+        }
+        
+        .div1 {
+           background: cadetblue;
+            grid-column: 1; /*  item-1 in col 1 */
+            grid-row: 1; /* item-1 in row 1 */
+        }
+        
+        .div2 {
+            background: yellowgreen;
+            grid-column: 2; /* put item-2 in col 3 */
+            grid-row: 1; /* put item-2 in col 1 */
+            
+        }
+        
+        .div3 {
+            background: cadetblue;
+            grid-column: 3; /* put item-3 in col 5 */
+            grid-row: 1; /* put item-3 in col 1 */
+        }
+        
+        .div4 {
+            background: yellowgreen;
+            grid-column: 1; /*  item-4 in col 1 */
+            grid-row: 2; /* item-4 in row 2 */
+        }
+      
+        .div5 {
+             background: cadetblue;
+            grid-column: 2; /* put item-5 in col 3 */
+            grid-row: 2; /* put item-5 in col 2 */
+        }
+        
+        .div6 {
+            background: yellowgreen;
+            grid-column: 3; /*  item-6 in col 5 */
+            grid-row: 2; /* item-6 in row 2 */
+        }
+        
+        .div7 {
+            background: cadetblue;
+            grid-column: 1; /*  item-7 in col 1 */
+            grid-row: 3; /* item-7 in row 3 */
+        }
+        
+        .div8 {
+            background: yellowgreen;
+            grid-column: 2; /*  item-8 in col 3 */
+            grid-row: 3; /* item-8 in row 3 */
+        }
+        
+        .div9 {
+            background: cadetblue;
+            grid-column: 3; /*  item-9 in col 5 */
+            grid-row: 3; /* item-9 in row 3 */
+        }
+        
+    </style>
+    
+  </head>
+    
+  <body>
+
+        
+  
+           
+         <section class="grid-1">
+         
+          <div class="div1">1</div>
+          <div class="div2">2</div>
+          <div class="div3">3</div>
+          <div class="div4">4</div>
+          <div class="div5">5</div>
+          <div class="div6">6</div>
+          <div class="div7">7</div>
+          <div class="div8">8</div>
+          <div class="div9">9</div>
+           
+         </section>
+           
+   
+  </body>
+
+</html>

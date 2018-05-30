@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced CSS Selectors</title>
+    <!-- CSS Begins -->  
+    <style>
+    
+        
+        .wordly {
+            background: pink;
+        }
+        
+        .container {
+            background: maroon;
+        }
+        
+        figure {
+            color: beige;
+            margin-left: 10px;
+            border: 3px solid aqua;
+        }
+        
+        a[href="https://codeimmersives.com"] {
+            color: red;
+        }
+        
+         a[href="https://codeimmersives.com"]:hover {
+            color: yellow;
+            text-decoration: none;
+        }
+        
+        p, h3 {
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        h3 + p {
+            background: yellow;
+            color: purple;
+        }
+        
+        li {
+            font-family: monospace;
+            font-size: 24px;
+            color: beige;
+        }
+        
+        li:nth-of-type(2) {
+            background: aliceblue;
+            color: blue;
+            padding: 5px;
+        }
+        
+           section .hilite {
+            background: pink;
+        }
+        
+        .hilite {
+            background: yellow;
+            color: #333;
+        }
+        
+        
+        section.hilite {
+            background: cornflowerblue;
+            color: blue;
+        }
+        
+        
+    </style>  
+
+  </head>
+    
+  <body>
+      
+    <div class="container">
+    
+    <h1>Hello <span class="wordly">World</span></h1>
+        
+      <figure>
+        <img src="images/loft2.jpg" alt="Loft 2">
+        <figcaption>A Lovely Brooklyn Loft.</figcaption>  
+      
+      </figure>
+        
+        <a href="https://codeimmersives.com">Code Immersives</a>
+        
+        <br />
+        
+        <a href="https://amazon.com">Amazon</a>
+        
+        <h3>This is my header 3 tag.</h3>
+        <p>Lorem ipsum dolor amet kinfolk distillery chillwave farm-to-table, hammock banh mi chambray pok pok cliche yuccie subway tile bitters. Post-ironic vape seitan farm-to-table flannel pop-up taxidermy hoodie shabby chic listicle hexagon migas trust fund. Heirloom before they sold out tilde, ugh subway tile portland bespoke cronut. Fixie pug snackwave brunch vape bushwick food truck air plant retro cray street art pickled. Deep v whatever man bun aesthetic venmo.</p>
+        
+        <p>More text in another paragraph.</p>
+        
+        
+        <h3>Wild Dogs</h3>
+        
+        <ul>
+          <li>Wolves</li>
+          <li>Coyotes</li>
+          <li>Jackals</li>
+          <li>Dingos</li>
+        </ul>
+        
+        
+        <section>
+         
+          <p class="hilite">This paragraph section is pink</p>
+            
+        </section>
+        
+        <article>
+        
+          <p class="hilite">This pargraph om am article is yellow.</p>  
+            
+        </article>
+        
+        <section class="hilite">
+         
+          <p>Another section with the class of hilite.</p>
+            
+        </section>
+        
+        <!-- Button Styles -->
+        
+        <style>
+        
+            .btn {
+                display: block;
+                font-size: 18px;
+                margin: 20px;
+                padding: 20px;
+                background: #999;
+                color: #eee;
+                width: 480px;
+                border-radius: 5px;
+                border: 2px solid #555;
+            }
+            
+            .btn-good {
+                background: #494;
+                color: #cec;
+            }
+            
+            .btn-warn {
+                background: #944;
+                color: #ecc;
+            }
+            
+            .shout {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            
+            .btn:hover {
+                cursor: pointer;
+                background: #ccc;
+                color: #ff0;
+            }
+            
+            .btn-good:hover {
+                background: #8c8;
+                color: #ecc;
+            }
+            
+            .btn-warn:hover {
+                background: #c88;
+                color: #ecc;
+            }
+        
+        </style>
+        
+        <h3>Buttons and their classes</h3>
+        
+          <button class="btn">Class: btn</button>
+        
+          <button class="btn btn-good">btn btn-good</button>
+        
+          <button class="btn btn-warn">btn btn-warn</button>
+        
+          <button class="btn shout">btn shout</button>
+        
+          <button class="btn btn-good shout">btn btn-good shout</button>
+        
+          <button class="btn btn-warn shout">btn btn-warn shout</button>
+        
+    </div>
+      
+      <style>
+      
+      body {
+            font-size: 18px;
+            background: blue;
+            font-size: 12%;
+        }
+        
+        * {
+            /* padding: 0;
+            margin: 0; 
+            font-size: 18px; 
+            padding :36px; */
+        } 
+        
+        html {
+            background: coral;
+        }
+        
+        h1 {
+            background: gold;
+            font-size: 5em;
+            margin-left: 2em;
+            margin-top: 0.5em;
+        }
+        
+        h2 {
+            width: 25em;
+            font-size: 3em;
+            margin-left: 2em;
+            margin-top: 2.5em;
+        }
+        
+        p {
+            width: 40em;
+            text-indent: 2em;
+            margin-left: 5em;
+            line-height: 1.5em;
+            font-size:1.5em;   /* 18px  =12 (font-size of parent*)*1.5(1.5em) */
+        }
+          
+          .ptag {
+            font-size: 18px;
+          }
+          
+          section {
+              font-size: 1.25em;
+          }
+        
+     </style>
+      
+      <hr />
+      
+      <h1>Everythings relative when using em units</h1>
+      <p>The em is a unit of size used instead of pixels. Its used for font-size, border, border-radius, margin, padding on any property that can accept a value denominated in pixels</p>
+    
+      <section>
+          <h1>Everythings relative when using em units</h1>
+      <p>The em is a unit of size used instead of pixels. Its used for font-size, border, border-radius, margin, padding on any property that can accept a value denominated in pixels</p>
+      </section>
+      
+  </body>  
+    
+</html>

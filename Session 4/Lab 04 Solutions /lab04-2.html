@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <title>Contact Form</title>
+    <meta charset="UTF-8">
+    
+    <link href="css/lab04-formstyles.css" rel="stylesheet" type="text/css">
+    
+    <style>
+    /*Included in css link*/
+    </style>
+    
+</head>
+    
+<body>
+
+    <h1>Lab 04 - Problem 2</h1>
+
+    <form name="msgForm" id="msgForm" method="post" action="message-proc.php">
+
+        <table>
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="contactName" id="contactName"                    placeholder=". . .">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email" 
+                           placeholder=". . .">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone:</td>
+                <td><input type="text" name="phone" id="phone" 
+                           placeholder="(###) ###-####">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Message:</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <textarea name="message" id="message" placeholder="Dear . . ."></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Want a response?</td>
+                <td>
+                    <input type="checkbox" name="responseCheck" id="responseCheck">
+                </td>
+            </tr>
+            
+            <tr>
+              <td>Favorite Color:</td>
+              <td><input type="color" name="color" id="color" /></td>
+            </tr>
+
+            <tr>
+                <td>Date Available:</td>
+                <td>
+                    <input type="date" name="date" id="date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Time Available:</td>
+                <td>
+                    <input type="time" name="time" id="time">
+                </td>
+            </tr>
+            
+            <tr>
+              <select>
+                <option value="google">Google</option>
+                 <option value="firefox">firefox</option>  
+              </select>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+    
+</html>

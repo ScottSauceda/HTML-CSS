@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+<head>
+<title>CSS Selectors</title>
+<style>
+ 
+    .green {color:green;}
+    
+    .red {color:red;}
+    
+    .responsive {}
+    
+    
+    p {}
+    
+    #first {color:blue;}
+
+    /* COMPOUND CSS SELECTORS */
+    
+    p[id] {color: green;}
+
+    p[class] {color: orange;}
+    
+    p[id="first"] {font-weight:bold;}
+
+    
+     /* Target ID= first. fire, winterfir, zzzfir1 */
+    p[id^="fir"] {
+        
+        font-size:1.4em;
+    }
+    
+    
+     p[class^="green"] {
+        
+        font-size:1.4em;
+    }
+    
+    img[alt*="Loft"] {
+        
+        border:5px solid blue;
+    }
+    
+    img[alt$="3"] {
+        
+        border-radius:50%;
+    }
+    
+    
+  /* PSUEDO ELEMENTS */  
+
+    p::first-line {
+        font-weight: bold;
+    }    
+    
+    p::first-letter {font-size:4em;}
+    
+    img:first-child {
+        
+       width:50%; 
+    }
+    
+    img:nth-child(3) {
+filter:grayscale(0.9);
+    }
+   
+    
+li:nth-child(odd) {background: #CCC;}
+li:nth-child(even) {background: red;}    
+
+    
+    
+    
+</style>    
+    
+    
+    
+    
+    
+</head>
+<body>
+    <img src="images/loft3.jpg" alt="Loft 1"> 
+<div id="container">
+    
+    
+<p id="first" class="green1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum libero, hendrerit sit amet vehicula a, gravida sed augue. Nam finibus ultrices congue. Donec posuere, metus ac pharetra iaculis, nisl urna commodo tellus, sit amet interdum libero massa sit amet ante. Quisque aliquet est nec odio elementum, id luctus lectus iaculis. Ut rhoncus sed mi eget commodo. Morbi condimentum pretium lobortis. Nam a blandit ante. Donec ac venenatis nisi, vitae pharetra velit. Donec convallis et erat ac sollicitudin. Proin sed aliquet justo, vitae semper ligula. Praesent pulvinar semper felis. Donec consectetur quis nulla eget accumsan. Nullam finibus ligula arcu, eget venenatis lacus maximus et. Phasellus iaculis sem vitae dui consectetur, sit amet porttitor magna convallis. Suspendisse fermentum viverra quam, sed accumsan mauris volutpat ut.</p>
+    
+<img src="images/loft3.jpg" alt="Loft 1">    
+
+<p class="greenlight responsive">Suspendisse eu orci eu nulla dictum semper. Cras rhoncus lacinia lectus a placerat. Morbi ut mattis quam. Donec sed justo ultricies, finibus ante non, vulputate nunc. Sed sed neque quis eros pharetra dictum. Aliquam pretium magna eleifend tellus luctus fringilla. Nam nisi leo, elementum nec porttitor at, interdum eget libero. Nulla sed odio at erat elementum mattis. Nulla facilisi. Aenean sit amet tempus mi. Phasellus scelerisque tellus ac quam posuere egestas. Curabitur elementum turpis diam, vel blandit mi efficitur eget. Praesent pulvinar nibh nec sem posuere tristique. Integer cursus, nisl ac euismod luctus, urna nulla tempus quam, eu feugiat lorem erat a ligula.</p>
+
+<p class="green">Sed imperdiet felis eget odio sollicitudin sodales. Morbi quis quam eget purus elementum fermentum a eget sapien. Maecenas congue fringilla ex et tincidunt. Donec vel nulla tincidunt, gravida lectus vitae, ornare eros. Nam egestas quam sit amet ligula pharetra elementum. Cras congue justo ligula, id gravida elit tincidunt a. Nullam suscipit justo ut ipsum consectetur, ac aliquet arcu malesuada. Vestibulum varius ultrices tristique. Aenean at leo sapien. Nullam consectetur ligula nec est mollis efficitur. Cras sit amet volutpat risus. <img src="images/loft3.jpg" alt="Loft 3">
+    
+        <img src="images/loft3.jpg" alt="Loft 3"> 
+
+        <img src="images/loft3.jpg" alt="Loft 3"> 
+
+</p>
+
+<p class="red">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vel pharetra augue, in euismod elit. Aenean eget fermentum urna, vitae condimentum tellus. Cras sit amet tristique ipsum, eget malesuada lacus. Quisque accumsan neque ut ante rutrum interdum. Nullam vel lectus neque. Donec pharetra nec elit ut commodo. Nulla laoreet ornare finibus. Maecenas quis faucibus lectus. Aenean dictum eleifend lectus. Praesent ornare diam sed nisl tincidunt euismod. Etiam lacinia nulla pulvinar magna tristique, posuere dictum ante ultricies. Morbi porta leo nec nulla lacinia scelerisque.</p>
+
+<p class="redlight">Quisque lobortis, magna sit amet venenatis vestibulum, ipsum justo pretium sapien, in pellentesque magna dolor et leo. Curabitur ultrices porta dolor a accumsan. Etiam pellentesque pellentesque nisl. Etiam non velit consectetur, placerat orci a, interdum sapien. Vestibulum a leo non felis blandit hendrerit. Duis ut lacus hendrerit, hendrerit augue non, sollicitudin odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.   </p>
+    
+    
+</div>
+
+
+<ul>
+    <li>First</li>
+    <li>second</li>
+    <li>third</li>
+    <li>fourth</li>
+    <li>fifth</li>
+    <li>sixth</li>
+    <li>seventh</li>
+    <li>eighth</li>
+    
+</ul>
+
+</body>
+</html>

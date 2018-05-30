@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Flexbox 2</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <style>
+    
+        body {
+            background-color: azure;
+        }
+        
+        .container {
+            display: flex;
+            height: 98vh;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/san-fran.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .boxy {
+            
+        }
+        
+        div[class^="child"] { /* classes w/ "child: in name */
+        text-align: center;
+            background-color: rgba(233,233,255,0.7);
+            border-radius: 15px;
+            color: rgba(44,55,99,0.7);
+            text-transform: uppercase;
+            padding: 15px;
+            box-shadow: 5px 5px 5px #135;
+            border: 3px solid cadetblue;
+        }
+        
+        input {
+            font-size: 1rem;
+            padding: 5px 10px;
+            background-color: aliceblue;
+            color: #135;
+            font-weight: bold;
+        }
+        
+    </style>
+    
+  </head>
+    
+  <body>
+    <div class = "container">
+
+        <div class="child1">
+          <h3>Lofty Heights Apartment Finder</h3>
+          <form name="form1" id="form1" method="post" action="searchAptsProc.php">
+              Search: <input type="search" name="search" id="search">
+              <input type="submit" name="submit" value="GO!">
+          </form><br>
+        </div>
+<!--        <div class="child2">Child 2</div>-->
+<!--        <div class="child3">Child 3</div>-->
+        
+        
+    </div> <!-- end container -->
+      
+  </body>
+
+</html>

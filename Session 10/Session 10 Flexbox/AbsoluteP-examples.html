@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Starter Page</title>
+    <meta charset="UTF-8" />
+    
+    <meta name="keywords" content="This is our HTML Starter Page. It has the common elements we need to build a web page" />
+    <meta name="description" content="HTML, Template, Starter, CSS" />
+      
+    <style>
+        
+        #div1 {
+          background-color: black;
+          position: absolute;
+          left: 50px;
+          top: 50px;
+          width: 250px;
+          height: 167px;
+          padding: 15px;
+          z-index: 3;
+        }
+        
+        #div2 {
+          background-color: black;
+          position: absolute;
+          left: 350px;
+          top: 150px;
+          width: 250px;
+          height: 167px;
+          padding: 15px;
+          z-index: 2;
+        }
+        
+        #div3 {
+          background-color: black;
+          position: absolute;
+          left: 650px;
+          top: 150px;
+          width: 250px;
+          height: 167px;
+          padding: 15px;
+          z-index: 1;
+        }
+        
+        #div1 {
+            box-shadow: 10px 10px 10px #f33;
+            /* x-offset, y-offset, blur radius, color */
+            border: 3px solid yellow;
+        }
+        
+        #div2, #div3 {
+            box-shadow: 10px 10px 10px yellow;
+            /* x-offset, y-offset, blur radius, color */
+            border: 3px solid red;
+        }
+        
+        #div2, #div3, #div2 img, #div3 img {
+            border-radius: 30px;
+        }
+        
+        #div2, #div3 {
+            transform: rotate(5deg);
+        }
+        
+    </style>
+    
+  </head>
+  <body>
+      
+    <div id="div1">
+      <img src="images/Cyclops.png" alt="cyclops, marvel">
+    </div>
+      
+    <div id="div2">
+      <img src="images/gambit.png" alt="gambit, marvel">
+    </div>
+      
+    <div id="div3">
+     <img src="images/daredevil.png" alt="daredevil, marvel">
+    </div>
+      
+  </body>
+    
+</html>

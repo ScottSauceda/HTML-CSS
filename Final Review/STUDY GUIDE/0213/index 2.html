@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: beige;
+            grid-gap: 20px; 
+            height:50vh;
+        }
+        
+        .form1 {
+            grid-template-areas: 
+                "pass pass pass"
+                "btn user user"
+                "btn user user"
+                "date date date";
+                
+        }
+        
+        .yellow, .red{
+            background: yellow;
+        }
+/*        Any element that is the direct child of a div*/
+        div > * {
+            color:pink;
+        }
+/*        Any p tag that is within a div, even if the             div is not the direct parent*/
+        div p{
+            color:blue;
+        }
+        
+        
+        
+        .user{grid-area: user; }
+        .pass{grid-area: pass; }
+        .date{grid-area: date; }
+        .btn{grid-area: btn;}
+        
+/*
+        .user{grid-row: 2; grid-column:2 }
+        .pass{grid-row: 1; grid-column:2 }
+        .date{grid-row: 1; grid-column:1 }
+        .btn{grid-row: 2; grid-column:1}
+        
+*/
+        input {
+            background: #bbb;
+        }
+        
+        button{
+            background: #bbb;
+        }
+        
+        html{
+/*            font-size:16px;*/
+        }
+        body{
+            font-size:32px;
+        }
+        .layer1{
+            font-size:1.25em; /*32 * 1.25 = 40*/
+        }
+        .layer1-2{
+            font-size:20px;
+        }
+        .layer2{
+            font-size:1.25em; /*20 * 1.25 = 25*/
+        }
+        .layer3{
+            font-size:1.25rem; /*16 * 1.25 = 20*/
+        }
+        
+        /* em takes the parent's font size after modification of its own em
+        
+            rem will take the html tag's font size'*/
+        
+
+        /* For these pseudo selectors, target the attribute within the square brackets([])*/
+        
+        *[class^="lay"]{
+            background:purple;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <form class="form1 container red" action="index.html" method="get">
+        <input type="text" name="username" class="user">
+        <input type="password" name="pass" class="pass">
+        <input type="date" name="date" class="date">
+        <button class="btn">Submit Me!</button>
+    </form>
+    
+    
+    </div>
+    
+    <div class="layer1">
+        <p>I'm in Layer 1</p>
+        <div class="layer1-2">
+            <p>I'm in Layer1-2</p>
+            <div class="layer2">
+                <p>I'm in Layer 2</p>
+                <div class="layer3">
+                    <p>I'm in Layer 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <section>
+            <p>I'm not in a layer!</p>
+        </section>
+    </div>
+    
+    
+</body>
+</html>

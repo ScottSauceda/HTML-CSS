@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Starter Page</title>
+    <meta charset="UTF-8" />
+    
+    <meta name="keywords" content="This is our HTML Starter Page. It has the common elements we need to build a web page" />
+    <meta name="description" content="HTML, Template, Starter, CSS" />
+      
+    <style>
+        
+        img {
+            padding: 1em;
+            margin: 1em;
+            width: 200px;
+            height: auto;
+        }
+        
+        .grayscale {
+            filter: grayscale(0.9);
+            position: absolute;
+            left: 400px;
+            top: 10px;
+            width: 250px;
+            height: auto;
+        }
+        
+        .sepia {
+            filter: sepia(1);
+        }
+      
+    </style>
+    
+  </head>
+  <body>
+  
+    <div id="container">
+      
+      <h2>Default Image (no filters)</h2>
+        <img src="images/donkeykong.png" alt="Donkey Kong"/>
+      <h2 class="grayscale">Grayscale</h2>
+        <img src="images/donkeykong.png" alt="Donkey Kong" class="grayscale"/>
+      <h2>Sepia</h2>
+        <img src="images/donkeykong.png" alt="Donkey Kong" class="sepia"/>
+        
+    </div>
+                       
+  </body>
+    
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="us">
+ <head>
+   <title></title>
+   <meta charset="UTF-8"/>
+   <meta name="keywords" description=""/>
+   <meta name="description" keywords="" />
+     
+   <style>
+     
+       * {
+           font-size: 18px;
+           padding: 18px;
+       }  
+       
+       html {
+           background-color: coral;
+       }
+       
+       body {
+           background-color: aquamarine;
+       }
+       
+       h1 {
+           background-color: gold;
+       }
+       
+       .worldly {
+           background-color: pink;
+       }
+       
+       .container {
+           background-color: maroon;
+       }
+       
+       figure {
+           color: beige;
+           margin-left: 10%;
+           border: 3px solid aqua;
+       }
+       
+        img {
+            width: 80%;
+            height: auto;
+       }
+     
+       figcaption a {
+           color: yellow;
+           text-decoration: none;
+           font-family: sans-serif;
+           font-weight: bold;
+           font-size: 21px;
+       }
+       
+       a[href="http://www.codeimmersives.com"] {
+           color: olivedrab;
+           text-decoration: underline;
+           text-transform: uppercase;
+       }
+       
+       a[href="http://www.codeimmersives.com"]:hover {
+           color: yellow;
+           text-decoration: none;
+       }
+       
+       p, h3 {
+           color: white;
+           font-family: sans-serif;
+       }
+       
+       h3 + p {
+           /* target 1st paragraph after each h3 */
+           background-color: yellow; /* overrides white of p */
+           color: purple;
+       }
+       
+       li {
+           font-family: monospace;
+           font-size: 24px;
+           color: beige;
+       }
+       
+       li:nth-of-type(2) {
+           background-color: aliceblue;
+           color: blue;
+           padding: 5px;
+       }
+       
+       .hilite {
+           background: yellow;
+           color: #333;
+       }
+       
+       section .hilite {
+           background: pink;
+       }
+       
+       section.hilite {
+           background: cornflowerblue;
+           color: blue;
+       }
+       
+       .btn {
+           display: block;
+           font-size: 18px;
+           font-family: sans-serif;
+           margin: 20px;
+           background: #999;
+           color: #eee;
+           width: 480px;
+           padding: 5px 20px;
+           border-radius: 5px;
+           border: 2px solid #555;
+       }
+       
+       /* in addition to .btn, some buttons also get the .btn-good  or .btn-warn class applied */
+       
+       .btn-good {
+           background: #494;
+           color: #cec;
+       }
+       
+       .btn-warn {
+           background: #944;
+           color: #ecc;
+       }
+       
+       .shout {
+           text-transform: uppercase;
+           font-weight: bold;
+       }
+       
+       .btn:hover {
+           cursor: pointer;
+           background: #ccc;
+           color: #ff0;
+       }
+       
+       .btn-good:hover{
+           background: #8c8;
+           color: #dfd;
+       }
+       
+       .btn-warn:hover {
+           background: #c88;
+           color: #ecc;
+       }
+       
+   </style>
+     
+ </head>
+
+ <body>
+    <div class="container">
+       <h1>Hello <span class="worldly">World</span></h1>
+         <figure>
+        
+           <img src="../images/loft1.jpg" alt="NYC aerial view" />
+             <figcaption>
+                 
+              <a href="htt://www.amazon.com">Amazon</a>
+                 
+               Lower Manhattan, New York City aerial view
+                 
+               <a href="http://www.codeimmersives.com">Code Immersives</a>
+                 
+             </figcaption>
+             
+         </figure>
+        
+        <h3>Testing sibling selector h3 +p</h3>
+                 <p>This is the 1st p after the h3. It gets the sibling selector style, which makes the background yellow.</p>
+                 <p>This is the 2nd p after the h3. It is ignored by the sibling selector style.</p>
+        
+        <h3>Wild Dogs</h3>
+        
+          <ul>
+            <li>Wolves</li>
+            <li>Coyotes</li>
+            <li>Jackals</li>
+            <li>Dingos</li>
+          </ul>
+        
+        
+        <section>
+          <p class="hilite">This paragraph in a section is pink. </p>
+        </section>
+        
+        <article>
+          <p class="hilite">This paragraph in an article is yellow.</p>
+        </article>
+        
+        <section class="hilite">
+          <p>This section paragraph uses the hilite class, so should be aqua.</p>
+        </section>
+        
+        <h3>Buttons and their classes</h3>
+        <button class="btn">Class btn</button>
+        
+        <button class="btn btn-good">btn btn-good</button>
+        
+        <button class="btn btn-warn">btn btn-warn</button>
+        
+        <button class="btn shout">btn shout</button>
+        
+        <button class="btn btn-good shout">btn btn-good shout</button>
+        
+        <button class="btn btn-warn shout">btn btn-warn shout</button>
+        
+    </div>  <!-- End of container -->
+ </body>
+    
+</html>

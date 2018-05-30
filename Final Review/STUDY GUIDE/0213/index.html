@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: beige;
+            grid-gap: 20px; 
+            height:50vh;
+        }
+        
+        .form1 {
+            grid-template-areas: 
+                "pass pass pass"
+                "btn user user"
+                "btn user user"
+                "date date date";
+                
+        }
+        
+        .user{grid-area: user; }
+        .pass{grid-area: pass; }
+        .date{grid-area: date; }
+        .btn{grid-area: btn;}
+        
+/*
+        .user{grid-row: 2; grid-column:2 }
+        .pass{grid-row: 1; grid-column:2 }
+        .date{grid-row: 1; grid-column:1 }
+        .btn{grid-row: 2; grid-column:1}
+        
+*/
+        input {
+            background: #bbb;
+        }
+        
+        button{
+            background: #bbb;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <form class="form1 container" action="index.html" method="get">
+        <input type="text" name="username" class="user">
+        <input type="password" name="pass" class="pass">
+        <input type="date" name="date" class="date">
+        <button class="btn">Submit Me!</button>
+    </form>
+    
+    
+    </div>
+    
+    
+</body>
+</html>
